@@ -8,6 +8,7 @@ from app.api.routes import (
     email_routes,
     prompt_routes,
     dashboard_routes,
+    scraper_routes,
 )
 
 # Create DB tables on startup
@@ -48,3 +49,4 @@ app.include_router(clinic_routes.router, prefix=API_PREFIX)
 app.include_router(email_routes.router, prefix=API_PREFIX)
 app.include_router(prompt_routes.router, prefix=API_PREFIX)
 app.include_router(dashboard_routes.router, prefix=API_PREFIX)
+app.include_router(scraper_routes.router, prefix=API_PREFIX)
